@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+div > .q1 {
+    color: darkblue;
+}
+
+.w2 {
+    color: red;
+    font-size: 22px;
+    
+}
+
+.i1 {
+    color: green;
+    font-style: italic;
+}
+
+.o1 {
+    color: red;
+    font-size: 22px;
+}
+
+#a1 {
+    color: red;
+    font-size: 22px;
+}
+
+.p1 {
+    color: red;
+    font-size: 30px;
+}

@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+div > .q1 {
+    color: darkblue;
+}
+
+.w2 {
+    color: red;
+    font-size: 22px;
+    
+}
+
+.i1 {
+    color: green;
+    font-style: italic;
+}
+
+.o1 {
+    color: red;
+    font-size: 22px;
+}
+
+#a1 {
+    color: red;
+    font-size: 22px;
+}
+
+.p1 {
+    color: red;
+    font-size: 30px;
+}
+
+.box {
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 400;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid red;
+    overflow-wrap: break-word;
+}
+
+
+.emailmain {
+    width: 550px;
+}
+
+.email, .pass {
+    display: inline-block
+    width: 30%;
+    padding: 13px;
+    float: left;
+    margin: 0;
+
+}
+
+
+
+
+

@@ -1,0 +1,129 @@
+
+<html>
+  <head>
+    <script src="main.js" type="text/javascript"></script>
+    <link href="./main.css" rel="stylesheet">
+  </head>
+  <body>
+         <div class="main">
+          <form name="character" method="GET">
+            <div class="emailmain">
+              <div class="email">
+                Email: 
+                <input type="email" name="Email" required />
+              </div>
+              <div class="pass"> 
+                Пароль: 
+                <input type="password" name="Password" minlength="8" maxlength="16" required />
+              </div>
+            </div>
+              <br/>
+              <div class="q1">
+                Аватар:
+                <input type="file" name="avatar" required />
+              </div>
+              <br/>
+              <div class="q1">
+                Дата рождения:
+                <input type="date" name="dateOfBirth" required />
+              </div>
+          </div>
+          <!-- <div> -->
+            <div class="name">
+              Имя:
+              <input type="text" name="name" required />
+            </div>
+            <!-- <div> -->
+              <!-- <br/> -->
+              <div class="planet"> 
+                <label for="planet" class="w2">Выберите планету:</label>
+              <!-- </div> -->
+              <p class="i1"><input type="radio" value="coruscant" name="planet" required /> Coruscant </p>
+              <p class="i1"><input type="radio" value="cybertron" name="planet" required /> Cybertron </p>
+              <p class="i1"><input type="radio" value="gallifrey" name="planet" required /> Gallifrey </p>
+            </div>
+            <div class="background">
+              <label for="background" class="o1">Опыт:</label>
+            <!-- </div> -->
+            <p class="i1"><input type="radio" value="pilot" name="background" required /> Pilot </p>
+            <p class="i1"><input type="radio" value="miner" name="background" required /> Miner </p>
+            <p class="i1"><input type="radio" value="merhant" name="background" required /> Merhant </p>
+          </div>
+          <div class="age">
+            <p id="a1">Возраст:
+            <input type="number" name="age" required />
+            </p>
+          </div>
+          <div>
+            <p class="q1">Выберите питомца:
+              <select name="pet" required>
+                <optgroup label="Животные">
+                  <option selected value="dog">Собака</option>
+                  <option value="crocodile">Крокодил</option>
+                  <option value="cat">Кошка</option>
+                  <option value="mouse">Мышь</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                  <option value="parrot">Попугай</option>
+                  <option value="chicken">Курица</option>
+                  <option value="eagle">Орел</option>
+                </optgroup>
+              </select>
+            </p>
+          </div>
+          <div>
+            <p class="p1">
+              Цвет корабля:
+              <input type="color" name="shipColor" required>
+            </p>
+          </div>
+          <div>
+            <p class="p1">
+              Интеллект:
+              <input type="number" name="intelligence" min="1" max="20" required disabled />
+            </p>
+          </div>
+          <div>
+            <p class="p1">
+              Телосложение:
+              <input type="number" name="constitution" min="1" max="20" required disabled />
+            </p>
+          </div>
+          <div>
+            <p class="p1"> 
+              Харизма:
+              <input type="number" name="charisma" min="1" max="20"  required disabled />
+            </p>
+            <button type="submit" id="roll"> Сгенерировать </button>
+          </div>
+          <div>
+            
+            <p class="p1">Инвентарь:</p>
+            <label for="inventory-gun">
+              Пистолет:
+            </label>
+            <input type="checkbox" name="inventory-gun" id="inventory-gun" required checked/>
+            <label for="inventory-screwdriver">
+              Отвертка:
+            </label>
+            <input type="checkbox" name="inventory-screwdriver" id="inventory-screwdriver" required checked/>
+            <label for="inventory-screwdriver">
+              Молоток:
+            </label>
+            <input type="checkbox" name="inventory-hammer" id="inventory-hammer" required checked/>
+          </div>
+          <div>
+            <p>Описание</p>
+            <textarea cols="50" name="description" rows="1">Введите описание.
+            </textarea>
+          </div>
+          <br/>
+          <button name="send" type="submit">Отправить</button>
+          </div>
+          </form>
+      <div class="box">
+          ;owendoencoencoencoecnoecneocneocneocneownceocnlecnoewncoewncoewncecnecnecnecewc
+      </div>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+
+  .q1 {
+    padding: 20px;
+  }
+  
+  .outer-square, .inner-square, .inner-inner-sqare {
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .outer-square {
+    background-color: rgb(115, 7, 192);
+  }
+  .inner-square {
+    background-color: rgb(13, 214, 221);
+  }
+
+  .inner-inner-sqare {
+    background-color: bisque;
+  }
+  .ball {
+    width: 10%;
+    padding-bottom: 10%;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    
+  }
+  

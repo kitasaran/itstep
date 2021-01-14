@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font: 400 15px  Arial, sans-serif;
+  }
+
+.lawn {
+    padding: 4%;
+    height: 100%;
+    background-color: hsl(120, 58%, 33%);
+}
+
+.house {
+    display: flex;
+    height: 100%;
+
+}
+
+.terrace {
+    flex: 2 1 200px;
+    background-color: hsl(28, 32%, 66%);
+    
+
+}
+
+.left-wing {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 30% 0 30% 30%;
+}
+
+.middle {
+    flex: 0 1 280px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+}
+.right-wing {
+    flex: 3 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+    align-items: stretch;
+
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guest {
+    flex: 0.9 0 0px;
+    /* width: 100%; */
+    max-width: 500px;
+    border-top-right-radius: 80px;
+    background-color: hsl(306, 80%, 90%);
+
+}
+
+.garage {
+    flex: 0 0 200px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.entry {
+    flex: 0 0 200px;
+    background-color: hsl(153, 80%, 90%);
+
+}
+
+.hall {
+    flex: 4 1 40px;
+    background-color: hsl(255, 80%, 90%);
+
+}
+
+.storeroom {
+    flex: 3 1 30px;
+    display: flex;
+}
+
+.storage {
+    flex: 3.5 1 35px;
+    background-color: hsl(102, 80%, 90%);
+}
+
+.bathroom {
+    flex: 6.5 1 65px;
+    background-color: hsl(204, 80%, 90%);
+}
+
+.kitchen {
+ flex: 2 1 20px;
+ width: 75%;
+ background-color: hsl(51, 80%, 90%);
+}
+
+.dining {
+    flex: 3 1 30px;
+    width: 100%;
+    background-color: hsl(0, 80%, 90%);
+}

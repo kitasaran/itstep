@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Малевич</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .easel {
+      height: 800px;
+      position: relative;
+    }
+
+    .palette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      transform: translateX(-100%) translateX(-10px)
+    }
+
+    .reference {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    .canvas {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+
+
+      background-color: #f1f2ec;
+
+    }
+
+
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+
+      background-color: grey;
+    }
+
+    .box{
+      transform-origin: top left;
+      background-color: transparent;
+    }
+
+    .rect {
+      top:0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .box:nth-child(1) {
+      transform: translate(385px, 473px) rotateZ(-1deg) scale(2.35, 3.4);
+    }
+
+    .box:nth-child(1) .angle {
+      transform: rotateX(-45deg);
+      background-color: #efa601;
+    }
+
+    .box:nth-child(2) {
+      transform: translate(275px, 110px) rotateZ(47deg) scale(0.75, 1.25);
+      perspective: 200px;
+    }
+
+    .box:nth-child(2) .angle {
+      transform: rotateX(-10deg);
+      background-color: #efa601;
+    }
+
+    .box:nth-child(3) {
+      transform: translate(375px, 158px) rotateZ(49.6deg) scale(0.27, 3.95);
+      perspective: 200px;
+    }
+
+    .box:nth-child(3) .angle {
+      transform: rotateX(-40deg);
+      background-color: mediumpurple;
+    }
+
+    .box:nth-child(4) {
+      transform: translate(280px, 295px) rotateZ(56deg) scale(0.73, 1.05);
+      perspective: 200px;
+    }
+
+    .box:nth-child(4) .angle {
+      transform: rotateX(20deg) rotateZ(1deg);
+      background-color: grey;
+    }
+
+    .box:nth-child(5) {
+      transform: translate(455px, 290px) rotateZ(57deg) scale(0.73, 3.2);
+      perspective: 200px;
+    }
+
+    .box:nth-child(5) .angle {
+      transform: rotateX(-10deg) rotateZ(0deg);
+      background-color: black;
+    }
+
+  </style>
+</head>
+<body>
+<div class="easel">
+  <!-- <img class="palette" src="easy.jpg"/> -->
+  <!-- <img class="reference" src="easy.jpg"> -->
+  <div class="canvas">
+    <div class="shape box">
+      <div class="rect angle"></div>
+    </div>
+    <div class="shape box">
+      <div class="rect angle"></div>
+    </div>
+    <div class="shape box">
+      <div class="rect angle"></div>
+    </div>
+    <div class="shape box">
+      <div class="rect angle"></div>
+    </div>
+    <div class="shape box">
+      <div class="rect angle"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

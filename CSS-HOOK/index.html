@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS трюк с текстом</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+}
+.clipped {
+    background: url(./img.jpg) no-repeat center center;
+    background-size: cover;
+    background-size: 80%;
+    color: #fff;
+    text-align: center;
+    padding 2em;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
+
+.text {
+    font-size: 200pt;
+    font-weight: 800;
+    
+}
+
+.container .text:after {
+    content:"HELLO WORLD";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    background-image: -webkit-linear-gradient(left top, transparent 0%, 
+    transparent 25%, #555 25%, #555 50%, transparent 50%, 
+    transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    /* -webkit-text-fill-color: transparent; */
+    display: block;
+    text-shadow: none;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clipped">
+        <div class="text">HELLO WORLD</div>
+        </div> 
+       </div>
+</body>
+</html>
